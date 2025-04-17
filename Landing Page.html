@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WERUN Running Club Kuala Lumpur</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>WERUN Running Club</h1>
+      <nav>
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#join">How to Join</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Home Section -->
+    <section id="home" class="section intro">
+      <h2>Welcome to WERUN!</h2>
+      <p>
+        We are a vibrant running community based in Kuala Lumpur. Join us every Saturday at 7am at Taman Tasik Titiwangsa for a refreshing run and great company. Whether you're a beginner or a seasoned runner, WERUN is the place to be!
+      </p>
+      <a href="#join" class="btn">Join Us This Saturday</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-founders">
+      <h2>About Our Founders</h2>
+      <p>
+        WERUN was founded by a passionate group of runners who wanted to create a welcoming community for runners of all levels in Kuala Lumpur.
+      </p>
+      <div class="founders">
+        <div class="founder-card">
+          <img src="images/founder1.jpg" alt="Ahmad - Lead Coach" />
+          <h3>Ahmad</h3>
+          <p>Lead Coach & Organizer</p>
+        </div>
+        <div class="founder-card">
+          <img src="images/founder2.jpg" alt="Siti - Community Manager" />
+          <h3>Siti</h3>
+          <p>Community Manager</p>
+        </div>
+        <div class="founder-card">
+          <img src="images/founder3.jpg" alt="Raj - Event Coordinator" />
+          <h3>Raj</h3>
+          <p>Event Coordinator</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- How to Join Section -->
+    <section id="join" class="section">
+      <h2>How to Join</h2>
+      <ol>
+        <li>Show up at Taman Tasik Titiwangsa on Saturday at 7am.</li>
+        <li>Look for the WERUN banner near the main entrance.</li>
+        <li>Contact us on WhatsApp: <a href="tel:+60123456789">012-3456789</a> for more info.</li>
+      </ol>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section">
+      <h2>Gallery</h2>
+      <div class="gallery">
+        <img src="images/run1.jpg" alt="Group Run Photo" />
+        <img src="images/run2.jpg" alt="Morning Warmup" />
+        <img src="images/run3.jpg" alt="Running Trail" />
+        <!-- Add more images -->
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <h2>Contact & Location</h2>
+      <p>Email: <a href="mailto:werun.kl@gmail.com">werun.kl@gmail.com</a></p>
+      <p>Location: <a href="https://goo.gl/maps/yourlocation" target="_blank" rel="noopener noreferrer">Taman Tasik Titiwangsa, Kuala Lumpur</a></p>
+      <!-- Optional: Embed Google Map here -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 WERUN Running Club Kuala Lumpur</p>
+  </footer>
+
+  <script>
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('nav a').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+        // Update active class
+        document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
+        this.classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>
